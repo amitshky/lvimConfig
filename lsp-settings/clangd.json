@@ -1,0 +1,10 @@
+{
+  "clangd.path": "C:\\Program Files\\LLVM\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--log=verbose",
+    "--pretty",
+    "--background-index",
+    "--header-insertion=never",
+    "-j=8"
+  ]
+}
