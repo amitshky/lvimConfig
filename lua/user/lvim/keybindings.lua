@@ -90,4 +90,6 @@ lvim.keys.visual_block_mode = {
   ["<A-j>"] = ":m '>+1<CR>gv-gv",
   ["<A-k>"] = ":m '<-2<CR>gv-gv",
 }
-
+lvim.keys.term_mode = {
+  ["<C-H>"] = "<C-w>", -- Ctrl+Backspace
+}
