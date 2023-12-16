@@ -31,7 +31,14 @@ vim.opt.shiftwidth = 2
 vim.opt.list = true
 vim.opt.listchars = "tab:▸▸,space:·"
 
+-- colorscheme
+require('gruvbox').setup({
+	palette_overrides = {
+		dark0 = '#151515',
+	},
+})
 lvim.colorscheme = "gruvbox"
+
 -- relative file path in lualine
 lvim.builtin.lualine.sections.lualine_c = {
   {
@@ -39,3 +46,5 @@ lvim.builtin.lualine.sections.lualine_c = {
     path = 1,
   }
 }
+
+lvim.lsp.document_highlight = false
