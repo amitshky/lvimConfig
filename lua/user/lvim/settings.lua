@@ -1,5 +1,5 @@
 -- Enable powershell as your default shell
-vim.opt.shell = "pwsh.exe"
+vim.opt.shell = "pwsh.exe -NoLogo"
 vim.opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
 vim.cmd [[
 		let &shellredir = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
@@ -25,8 +25,13 @@ vim.opt.relativenumber = true
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.virtualedit = "onemore"
+vim.opt.expandtab = false
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.list = true
+vim.opt.listchars = "tab:▸▸,space:·"
 
-lvim.colorscheme = "jellybeans"
+lvim.colorscheme = "gruvbox"
 -- relative file path in lualine
 lvim.builtin.lualine.sections.lualine_c = {
   {
