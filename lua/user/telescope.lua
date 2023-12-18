@@ -1,5 +1,14 @@
 -- telescope settings
+
+lvim.builtin.which_key.mappings["g"]["S"] = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" }
+
+
 local actions = require("lvim.utils.modules").require_on_exported_call "telescope.actions"
+
+lvim.builtin.telescope.theme = "center"
+lvim.builtin.telescope.defaults.path_display = { "truncate" }
+lvim.builtin.telescope.defaults.prompt_prefix = lvim.icons.ui.Search .. " "
+lvim.builtin.telescope.defaults.selection_caret = lvim.icons.ui.Triangle .. " "
 
 lvim.builtin.telescope.defaults.mappings = {
   i = {

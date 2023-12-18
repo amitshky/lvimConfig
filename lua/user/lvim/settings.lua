@@ -29,7 +29,7 @@ vim.opt.expandtab = false
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.list = true
-vim.opt.listchars = "tab:▸▸,space:·"
+vim.opt.listchars = "tab:▸▸"
 
 -- colorscheme
 require('gruvbox').setup({
@@ -46,5 +46,3 @@ lvim.builtin.lualine.sections.lualine_c = {
     path = 1,
   }
 }
-
-lvim.lsp.document_highlight = false

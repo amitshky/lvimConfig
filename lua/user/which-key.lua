@@ -13,4 +13,6 @@ lvim.builtin.which_key.mappings["s"]["t"] = { "<cmd>Telescope current_buffer_fuz
 lvim.builtin.which_key.mappings["s"]["T"] = { "<cmd>Telescope live_grep<cr>", "Text in project" }
 lvim.builtin.which_key.mappings["l"]["R"] = { "<cmd>LspRestart<cr>", "Restart LSP" }
 lvim.builtin.which_key.mappings["l"]["o"] = { "<cmd>ClangdSwitchSourceHeader<cr>", "Switch header and source (C++)" }
+lvim.builtin.which_key.mappings["g"]["s"] = { "<cmd>Telescope git_status<cr>", "Status" }
+lvim.builtin.which_key.mappings["g"]["S"] = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" }
 

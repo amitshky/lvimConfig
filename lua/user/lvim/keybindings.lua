@@ -67,8 +67,7 @@ lvim.keys.normal_mode = {
 	["<Up>"] = "gk",
 	["<Down>"] = "gj",
 
-	["p"] = '"0p',
-  ["P"] = '"0P',
+	["dd"] = '"add', -- prevent delete operation to pollute the unnamed register
 }
 lvim.keys.visual_mode = {
   -- Better indenting
@@ -81,8 +80,10 @@ lvim.keys.visual_mode = {
   ["<up>"] = "gk",
   ["<down>"] = "gj",
 
-	["p"] = '"0p',
-  ["P"] = '"0P',
+	-- prevent delete operation to pollute the unnamed register
+	["d"] = '"_d',
+  -- ["p"] = '"0p',
+  -- ["P"] = '"0P',
 }
 lvim.keys.visual_block_mode = {
   -- better indenting
@@ -93,8 +94,8 @@ lvim.keys.visual_block_mode = {
   ["<A-j>"] = ":m '>+1<CR>gv-gv",
   ["<A-k>"] = ":m '<-2<CR>gv-gv",
 
-	["p"] = '"0p',
-  ["P"] = '"0P',
+	-- prevent delete operation to pollute the unnamed register
+	["d"] = '"_d',
 }
 lvim.keys.term_mode = {
   ["<C-H>"] = "<C-w>", -- Ctrl+Backspace
