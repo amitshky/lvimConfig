@@ -54,8 +54,9 @@ lvim.keys.normal_mode = {
   ["<S-l>"] = ":bnext<CR>",
   ["<S-h>"] = ":bprevious<CR>",
 
-	-- Undo
-	-- ["<C-z>"] = "u",
+	-- Redo and Restore undo
+	["U"] = "<C-r>", -- redo
+	["<C-r>"] = "U", -- restore (undo) last changed line
 
 	-- Indentation
 	[">"] = ">>",

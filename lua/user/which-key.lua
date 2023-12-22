@@ -2,10 +2,10 @@
 lvim.builtin.which_key.setup.ignore_missing = false
 lvim.builtin.which_key.mappings["W"] = { "<cmd>wa!<CR>", "Save All" }
 lvim.builtin.which_key.mappings["Q"] = { "<cmd>qa<CR>", "Quit All" }
-lvim.builtin.which_key.mappings["<C-w>"] = {
+lvim.builtin.which_key.mappings["\\"] = {
   name = "Split Workspace",
   ["\\"] = { "<C-w>v", "Vertically" },
-  ["-"] = { "<C-w>s", "Horizontally" },
+  ["|"] = { "<C-w>s", "Horizontally" },
   ["="] = { "<C-w>=", "Equal width and height" },
 }
 lvim.builtin.which_key.mappings["b"]["f"] = { "<cmd>Telescope buffers previewer=true<cr>", "Find" }

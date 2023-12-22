@@ -10,12 +10,12 @@ lvim.builtin.telescope.defaults.path_display = { "truncate" }
 lvim.builtin.telescope.defaults.prompt_prefix = lvim.icons.ui.Search .. " "
 lvim.builtin.telescope.defaults.selection_caret = lvim.icons.ui.Triangle .. " "
 
+
 lvim.builtin.telescope.defaults.mappings = {
   i = {
     ["<C-j>"] = actions.move_selection_next,
     ["<C-k>"] = actions.move_selection_previous,
-		["<C-n>"] = function() vim.api.nvim_input("<C-c>") end, -- Enter Normal mode
-    ["<Esc>"] = actions.close,
+    -- ["<Esc>"] = actions.close,
     ["<C-c>"] = actions.close,
     ["<C-Right>"] = actions.cycle_history_next,
     ["<C-Left>"] = actions.cycle_history_prev,
