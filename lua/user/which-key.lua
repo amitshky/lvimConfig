@@ -7,6 +7,11 @@ lvim.builtin.which_key.mappings["\\"] = {
   ["\\"] = { "<C-w>v", "Vertically" },
   ["|"] = { "<C-w>s", "Horizontally" },
   ["="] = { "<C-w>=", "Equal width and height" },
+	["f"] = {
+		name = "Focus",
+		["\\"] = { "<C-w>|", "Vertical Workspace" },
+		["|"] = { "<C-w>_", "Horizontal Workspace" },
+	}
 }
 lvim.builtin.which_key.mappings["b"]["f"] = { "<cmd>Telescope buffers previewer=true<cr>", "Find" }
 lvim.builtin.which_key.mappings["s"]["t"] = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Text in current buffer" }
