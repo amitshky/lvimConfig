@@ -32,11 +32,6 @@ vim.opt.list = true
 vim.opt.listchars = "tab:▸▸"
 
 -- colorscheme
--- require('gruvbox').setup({
--- 	palette_overrides = {
--- 		dark0 = '#151515',
--- 	},
--- })
 lvim.colorscheme = "lunarplus"
 
 -- relative file path in lualine
