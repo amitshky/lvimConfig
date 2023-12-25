@@ -21,6 +21,7 @@ vim.g.clipboard = {
 
 
 -- lvim settings
+vim.g.skip_tscontext_commentstring_module = true
 vim.opt.relativenumber = true
 vim.opt.wrap = true
 vim.opt.linebreak = true
@@ -41,3 +42,6 @@ lvim.builtin.lualine.sections.lualine_c = {
     path = 1,
   }
 }
+
+-- treesitter
+lvim.builtin.treesitter.indent = { enable = false }
