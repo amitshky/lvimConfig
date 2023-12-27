@@ -14,6 +14,15 @@ lvim.keys.insert_mode = {
 
   -- Ctrl + Backspace
   ["<C-H>"] = "<C-w>",
+  -- delete line
+  -- ["<C-d>"] = "<Esc>ddi",
+  ["<C-l>"] = "<Esc>ddi",
+
+  -- navigation
+  -- ["<C-k>"] = "<Up>",
+  -- ["<C-j>"] = "<Down>",
+  -- ["<C-h>"] = "<Left>",
+  -- ["<C-l>"] = "<Right>",
 
   -- Remapping keys to work for wrapped lines
   ["<Home>"] = "<Esc>lg^i",
