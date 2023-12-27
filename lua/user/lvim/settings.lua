@@ -31,6 +31,7 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.list = true
 vim.opt.listchars = "tab:▸▸"
+vim.opt.scrolloff = 0
 
 -- colorscheme
 lvim.colorscheme = "lunarplus"
