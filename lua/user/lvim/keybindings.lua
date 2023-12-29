@@ -16,7 +16,6 @@ lvim.keys.insert_mode = {
   ["<C-H>"] = "<C-w>",
   -- delete line
   -- ["<C-d>"] = "<Esc>ddi",
-  ["<C-l>"] = "<Esc>ddi",
 
   -- navigation
   -- ["<C-k>"] = "<Up>",
