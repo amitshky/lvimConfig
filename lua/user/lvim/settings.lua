@@ -30,7 +30,7 @@ vim.opt.expandtab = false
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.list = true
-vim.opt.listchars = "tab:▸▸"
+vim.opt.listchars = "tab:→→,space:∙"
 vim.opt.scrolloff = 0
 
 -- colorscheme
@@ -46,3 +46,6 @@ lvim.builtin.lualine.sections.lualine_c = {
 
 -- treesitter
 lvim.builtin.treesitter.indent = { enable = false }
+
+-- toggle term
+lvim.builtin.terminal.direction = "float"
