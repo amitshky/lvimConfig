@@ -109,3 +109,4 @@ lvim.keys.visual_block_mode = {
 lvim.keys.term_mode = {
   ["<C-H>"] = "<C-w>", -- Ctrl+Backspace
 }
+

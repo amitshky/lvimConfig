@@ -8,6 +8,7 @@
 require("user.lvim.settings")
 require("user.lvim.keybindings")
 require("user.lsp.keybindings")
+require("user.lsp.settings")
 require("user.cmp.keybindings")
 require("user.plugins")
 require("user.telescope")

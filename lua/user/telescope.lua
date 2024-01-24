@@ -38,3 +38,4 @@ lvim.builtin.telescope.defaults.mappings = {
   },
 }
 -- lvim.builtin.telescope.pickers.buffers["initial_mode"] = "insert"
+
