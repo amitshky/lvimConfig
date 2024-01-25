@@ -42,3 +42,4 @@ luac.out
 
 # project specific
 lsp-settings/clangd.json
+lazy-lock.json
