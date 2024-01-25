@@ -1,5 +1,5 @@
-local isWindows = not vim.fn.has('macunix')
-if (isWindows) then
+local checkOS = vim.fn.has('macunix')
+if (checkOS == 0) then -- windows
   -- Enable powershell as your default shell
   vim.opt.shell = "pwsh.exe -NoLogo"
   vim.opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
