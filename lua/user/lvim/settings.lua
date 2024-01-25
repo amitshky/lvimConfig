@@ -1,5 +1,5 @@
 local checkOS = vim.loop.os_uname().sysname
-if (checkOS == 'Windows') then
+if (checkOS == 'Windows_NT') then
   -- Enable powershell as your default shell
   vim.opt.shell = "pwsh.exe -NoLogo"
   vim.opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
