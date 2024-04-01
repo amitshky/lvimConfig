@@ -34,6 +34,7 @@ vim.opt.shiftwidth = 2
 vim.opt.list = true
 vim.opt.listchars = "tab:→→,space:∙"
 vim.opt.scrolloff = 0
+vim.cmd([[autocmd BufEnter * set formatoptions-=r]]) -- disable auto comment in newline
 
 -- colorscheme
 lvim.colorscheme = "lunarplus"
