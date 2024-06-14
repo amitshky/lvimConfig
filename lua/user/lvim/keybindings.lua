@@ -109,4 +109,8 @@ lvim.keys.visual_block_mode = {
 lvim.keys.term_mode = {
   ["<C-H>"] = "<C-w>", -- Ctrl+Backspace
 }
-
+lvim.builtin.terminal.execs = {
+	{ nil, "<M-q>", "Horizontal Terminal", "horizontal", 0.3 },
+	{ nil, "<M-w>", "Vertical Terminal", "vertical", 0.4 },
+	{ nil, "<M-e>", "Float Terminal", "float", nil },
+}
