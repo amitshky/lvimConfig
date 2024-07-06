@@ -62,21 +62,21 @@ lvim.keys.normal_mode = {
   ["<S-l>"] = ":bnext<CR>",
   ["<S-h>"] = ":bprevious<CR>",
 
-	-- Redo and Restore undo
-	["U"] = "<C-r>", -- redo
-	["<C-r>"] = "U", -- restore (undo) last changed line
+  -- Redo and Restore undo
+  ["U"] = "<C-r>", -- redo
+  ["<C-r>"] = "U", -- restore (undo) last changed line
 
-	-- Indentation
-	[">"] = ">>",
+  -- Indentation
+  [">"] = ">>",
   ["<"] = "<<",
 
-	-- Remapping keys to work for wrapped lines
-	["<Home>"] = "g^",
-	["<End>"] = "g$",
-	["<Up>"] = "gk",
-	["<Down>"] = "gj",
+  -- Remapping keys to work for wrapped lines
+  ["<Home>"] = "g^",
+  ["<End>"] = "g$",
+  ["<Up>"] = "gk",
+  ["<Down>"] = "gj",
 
-	["dd"] = '"add', -- prevent delete operation to pollute the unnamed register
+  ["dd"] = '"add', -- prevent delete operation to pollute the unnamed register
 }
 lvim.keys.visual_mode = {
   -- Better indenting
@@ -89,8 +89,8 @@ lvim.keys.visual_mode = {
   ["<up>"] = "gk",
   ["<down>"] = "gj",
 
-	-- prevent delete operation to pollute the unnamed register
-	["d"] = '"_d',
+  -- prevent delete operation to pollute the unnamed register
+  ["d"] = '"_d',
   -- ["p"] = '"0p',
   -- ["P"] = '"0P',
 }
@@ -103,15 +103,15 @@ lvim.keys.visual_block_mode = {
   ["<A-j>"] = ":m '>+1<CR>gv-gv",
   ["<A-k>"] = ":m '<-2<CR>gv-gv",
 
-	-- prevent delete operation to pollute the unnamed register
-	["d"] = '"_d',
+  -- prevent delete operation to pollute the unnamed register
+  ["d"] = '"_d',
 }
 lvim.keys.term_mode = {
   ["<C-H>"] = "<C-w>", -- Ctrl+Backspace
-	["jk"] = "<C-\\><C-n>",
+  ["jk"] = "<C-\\><C-n>",
 }
 lvim.builtin.terminal.execs = {
-	{ nil, "<M-q>", "Horizontal Terminal", "horizontal", 0.3 },
-	{ nil, "<M-w>", "Vertical Terminal", "vertical", 0.4 },
-	{ nil, "<M-e>", "Float Terminal", "float", nil },
+  { nil, "<M-q>", "Horizontal Terminal", "horizontal", 0.3 },
+  { nil, "<M-w>", "Vertical Terminal", "vertical", 0.4 },
+  { nil, "<M-e>", "Float Terminal", "float", nil },
 }
